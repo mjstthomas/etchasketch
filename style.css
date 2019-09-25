@@ -1,0 +1,49 @@
+body{
+	border: 50px solid red;
+	border-top: 5px;
+	margin: 0;
+	padding: 2px;
+	width: all;
+	height: all;
+}
+h1{	
+	color: white;
+	height: 60px;
+	border: 10px solid red;
+	border-bottom: 1px solid black;
+	border-top: 5px solid red;
+	width: 100%;
+	margin: 0;
+	font-weight: 600;
+	font-size: 50px;
+	background-color: red;
+	text-align: center;
+	text-shadow: 3px 3px 6px black;
+	box-sizing: border-box;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: repeat(64, auto);
+	grid-template-rows: repeat(32, auto);
+	grid-column-gap: none;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	height: 100%;
+	width: 100%;
+}
+.grid {
+	background: rgb(200, 200, 200);
+	height: 10px;
+}
+.clear{
+	background: red;
+}
+button{
+	background: black;
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-weight: 600;
+	height: 40px;
+}
