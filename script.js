@@ -1,10 +1,11 @@
-
 var selected = document.querySelector('.selected');
 var mode = document.querySelector('.mode');
 
 
 $('button').on('click', function(){
-	$('.grid').css('background', 'rgb(200, 200, 200)')
+	$('.grid').css('background', 'rgb(200, 200, 200)');
+	$('.container').empty();
+	grid();
 })
 $('#black').on('click', function(){
 	$('.grid').css('background', 'rgb(200, 200, 200)');
@@ -33,10 +34,18 @@ function rainbow(){
 
 
 
-/*var input1 = Number(input);
-
 function grid(){
-	for(i = 0; i <= input1; i++){
-		$('.container').addElement('div .grid');
+	var input = prompt("How many squares across would you like?");
+	var input1 = Number(input) * Number(input);
+	var i = 0;
+	$('.container').css("grid-template-column", input);
+	while(i < input1){
+		var div = document.createElement('div');
+		$('.container').append(div);
+		if(div.classList !== 'grid'){
+			div.classList.add('grid');
+		}
+		i++;
 	}
-}*/
+}
+grid();
