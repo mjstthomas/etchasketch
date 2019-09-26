@@ -1,10 +1,11 @@
 var selected = document.querySelector('.selected');
 var mode = document.querySelector('.mode');
+var clear = document.querySelector('.clear');
 
-
-$('button').on('click', function(){
+$('.clear').on('click', function(){
 	$('.grid').css('background', 'rgb(200, 200, 200)');
 	$('.container').empty();
+	clear.textContent = "Clear";
 	grid();
 })
 $('#black').on('click', function(){
@@ -47,5 +48,4 @@ function grid(){
 		}
 		i++;
 	}
-}
-grid();
+};
